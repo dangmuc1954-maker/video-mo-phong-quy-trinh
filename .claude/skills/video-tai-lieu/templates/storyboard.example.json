@@ -1,0 +1,320 @@
+{
+ "title": "Test v2 - Singapore",
+ "design": "v2",
+ "brand_tag": "Vì sao? · Singapore",
+ "canvas": [
+  1920,
+  1080
+ ],
+ "fps": 30,
+ "edit_profile": {
+  "genre": "giai_thich",
+  "mood_key": "neutral",
+  "subtitle": "story_pop",
+  "sfx_style": "real_light",
+  "emphasis": "data_count"
+ },
+ "scenes": [
+  {
+   "id": 1,
+   "module": "title",
+   "theme": "plain",
+   "transition_in": "cut",
+   "p": {
+    "bg_photo": "assets/img/ai_split.jpg",
+    "bg_dim": 0.8,
+    "title": "GIÀU HƠN\n_CẢ NƯỚC MỸ?_",
+    "size": 13,
+    "tag": "1965 → 2024",
+    "tag_cue": "giàu hơn"
+   },
+   "keywords": [],
+   "narration": "Một hòn đảo phải mua nước từ nước láng giềng để uống. Vậy mà giờ, nó giàu hơn cả nước Mỹ."
+  },
+  {
+   "id": 2,
+   "module": "race",
+   "theme": "plain",
+   "transition_in": "zoom",
+   "p": {
+    "kicker": "Thu nhập bình quân mỗi người · 2024",
+    "title": "Ai giàu hơn?",
+    "source": "World Bank · GDP/người, giá hiện hành",
+    "bg_photo": "assets/img/ai_island.jpg",
+    "bg_dim": 0.3,
+    "bg_blur": 14,
+    "items": [
+     {
+      "label": "Singapore",
+      "flag": "sg",
+      "value": 94897,
+      "prefix": "$",
+      "cue": "singapore gần"
+     },
+     {
+      "label": "Hoa Kỳ",
+      "flag": "us",
+      "value": 86170,
+      "prefix": "$",
+      "cue": "người mỹ"
+     }
+    ],
+    "max": 100000,
+    "badge": {
+     "text": "+10% so với Mỹ",
+     "cue": "86 nghìn"
+    }
+   },
+   "narration": "Năm 2024, thu nhập bình quân mỗi người Singapore gần 95 nghìn đô la. Người Mỹ, khoảng 86 nghìn."
+  },
+  {
+   "id": 3,
+   "module": "map",
+   "theme": "map",
+   "transition_in": "whip",
+   "p": {
+    "from_space": true,
+    "space_dur": 2.4,
+    "kicker": "Ngày định mệnh",
+    "title": "09.08.1965",
+    "header_cue": "ngày 9",
+    "places": [
+     {
+      "name": "Singapore",
+      "lat": 1.6,
+      "lon": 103.78,
+      "zoom": 9.3,
+      "pin": false
+     }
+    ],
+    "borders": [
+     {
+      "iso": "MYS",
+      "color": "#6EA8FF",
+      "cue": "tách khỏi"
+     },
+     {
+      "iso": "SGP",
+      "color": "#FF4D5A",
+      "cue": "singapore bị"
+     }
+    ],
+    "split": {
+     "iso": "SGP",
+     "cue": "tách khỏi",
+     "dx": 3,
+     "dy": 5,
+     "line": [
+      [
+       1.452,
+       103.6
+      ],
+      [
+       1.424,
+       104.06
+      ]
+     ]
+    },
+    "marks": [
+     {
+      "label": "Malaysia",
+      "lat": 1.78,
+      "lon": 103.98,
+      "color": "#3C82F6",
+      "cue": "malaysia"
+     },
+     {
+      "label": "Singapore",
+      "lat": 1.2,
+      "lon": 103.83,
+      "color": "#EF3340",
+      "iso": "SGP",
+      "cue": "singapore bị"
+     }
+    ]
+   },
+   "narration": "Ngày 9 tháng 8 năm 1965, Singapore bị tách khỏi Malaysia."
+  },
+  {
+   "id": 4,
+   "module": "quote",
+   "theme": "plain",
+   "transition_in": "fade",
+   "p": {
+    "bg_photo": "assets/img/ai_pier.jpg",
+    "bg_dim": 0.8,
+    "caption": "Tranh minh hoạ",
+    "text": "Với tôi, đây là\nmột khoảnh khắc\n_đau đớn._",
+    "by": "Lý Quang Diệu · họp báo truyền hình, 9/8/1965"
+   },
+   "narration": "Thủ tướng Lý Quang Diệu bật khóc trên truyền hình."
+  },
+  {
+   "id": 5,
+   "module": "area_compare",
+   "theme": "dark_glow",
+   "transition_in": "whip",
+   "p": {
+    "source": "World Bank 2024 · Niên giám thống kê 2025",
+    "small": {
+     "kicker": "Diện tích Singapore",
+     "label": "Singapore",
+     "value": 724.8,
+     "decimals": 1,
+     "unit": "km²",
+     "note": "nhỏ hơn cả *Hà Nội*",
+     "cue": "725"
+    },
+    "big": {
+     "label": "Hà Nội",
+     "value": 3359,
+     "unit": "km²"
+    },
+    "cue": "chỉ bằng"
+   },
+   "narration": "Cả đảo rộng chưa đến 725 ki lô mét vuông, chỉ bằng khoảng một phần năm Hà Nội."
+  },
+  {
+   "id": 6,
+   "module": "strike_cards",
+   "theme": "dark_glow",
+   "transition_in": "zoom",
+   "p": {
+    "kicker": "Tài nguyên thiên nhiên",
+    "title": "Gần như _bằng 0_",
+    "source": "Bộ Ngoại giao Singapore · PUB",
+    "items": [
+     {
+      "text": "Dầu mỏ",
+      "icon": "droplet",
+      "cue": "không dầu",
+      "strike_cue": "mỏ"
+     },
+     {
+      "text": "Khoáng sản",
+      "icon": "gem",
+      "cue": "không khoáng",
+      "strike_cue": "sản"
+     },
+     {
+      "text": "Nước ngọt",
+      "icon": "glass-water",
+      "cue": "đến nước",
+      "strike_cue": "phải mua",
+      "note": "Mua nước thô từ sông Johor · Hiệp định 1962"
+     }
+    ]
+   },
+   "narration": "Không dầu mỏ. Không khoáng sản. Đến nước ngọt cũng phải mua."
+  },
+  {
+   "id": 7,
+   "module": "line_chart",
+   "theme": "dark_glow",
+   "transition_in": "whip",
+   "p": {
+    "kicker": "Thu nhập bình quân mỗi người · Singapore",
+    "title": "1965 → 2024",
+    "source": "World Bank · GDP/người (USD)",
+    "prefix": "$",
+    "y_max": 100000,
+    "cue": "vậy mà",
+    "dur": 2.7,
+    "series": {
+     "1965": 517,
+     "1970": 926,
+     "1975": 2490,
+     "1980": 4928,
+     "1985": 7002,
+     "1990": 11862,
+     "1995": 24915,
+     "2000": 23853,
+     "2005": 29961,
+     "2010": 47237,
+     "2015": 55646,
+     "2020": 61773,
+     "2024": 94897
+    },
+    "ticks": [
+     1965,
+     1980,
+     1995,
+     2010,
+     2024
+    ],
+    "badge": {
+     "text": "×183",
+     "cue": "180"
+    }
+   },
+   "narration": "Vậy mà thu nhập mỗi người đã tăng gấp hơn 180 lần. Họ đã làm điều đó bằng cách nào?"
+  }
+ ],
+ "thumbnails": [
+  {
+   "layout": "split",
+   "image": "assets/img/ai_split.jpg",
+   "image_pos": "50% 60%",
+   "tags": [
+    "1965",
+    "2024"
+   ],
+   "top": "TỪ LÀNG CHÀI",
+   "bottom": "GIÀU HƠN MỸ"
+  },
+  {
+   "layout": "number",
+   "image": "assets/img/ai_island.jpg",
+   "image_pos": "60% 50%",
+   "big": "725 KM²",
+   "lines": [
+    "KHÔNG TÀI NGUYÊN",
+    "VẪN _GIÀU HƠN MỸ_"
+   ],
+   "badge": "×183 LẦN",
+   "ring": [
+    770,
+    150,
+    420,
+    400
+   ]
+  },
+  {
+   "layout": "concept",
+   "image": "assets/img/ai_glass.jpg",
+   "image_box": [
+    170,
+    -150,
+    1664,
+    936
+   ],
+   "lines": [
+    "PHẢI MUA",
+    "NƯỚC ĐỂ UỐNG"
+   ],
+   "bottom_lines": [
+    "GIÀU",
+    "HƠN MỸ?"
+   ],
+   "ring": [
+    850,
+    300,
+    300,
+    230
+   ],
+   "arrow": [
+    480,
+    300,
+    830,
+    390
+   ],
+   "flag": "sg"
+  }
+ ],
+ "image_jobs": [
+  {
+   "dest": "assets/img/ai_split.jpg",
+   "prompt": "Cinematic matte painting, 16:9 wide ... no text, no letters, no watermark."
+  }
+ ]
+}

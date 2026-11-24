@@ -1,0 +1,25 @@
+{
+  "title": "3 mẹo chống thấm tường",
+  "type": "tips",
+  "aspect": "16:9",
+  "canvas": [1920, 1080],
+  "transition": true,
+  "style": "realistic DIY tutorial video, bright natural light, clear close-ups of hands and tools",
+  "subjects": {
+    "worker": "Vietnamese construction worker in a blue uniform, yellow hard hat and work gloves"
+  },
+  "settings": {
+    "wall": "interior concrete wall with damp stains near the floor, Vietnamese townhouse"
+  },
+  "scenes": [
+    {"id": 1, "clip": "scene_01.mp4", "setting": "wall",
+     "action": "The worker points at the damp stain and scrapes off the peeling paint with a putty knife.",
+     "camera": "over-the-shoulder medium shot", "subtitle": "Bước 1: Cạo sạch lớp sơn bong tróc"},
+    {"id": 2, "clip": "scene_02.mp4", "setting": "wall",
+     "action": "He rolls a grey waterproof coating evenly over the wall with a paint roller.",
+     "camera": "close-up on the roller, slow pan", "subtitle": "Bước 2: Lăn 2 lớp chống thấm"},
+    {"id": 3, "clip": "scene_03.mp4", "setting": "wall", "first_last": ["ref/truoc.jpg", "ref/sau.jpg"],
+     "action": "Timelapse of the wall drying and being repainted bright white.",
+     "camera": "static wide shot", "subtitle": "Bước 3: Sơn hoàn thiện – hết thấm!"}
+  ]
+}

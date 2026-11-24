@@ -1,0 +1,29 @@
+# Bỏ qua toàn bộ video và thành phẩm làm ra (không đưa lên GitHub)
+projects/
+backup_capcut_projects_*/
+
+# Định dạng video & âm thanh xuất lớn
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+
+# Thư mục tạm & cache
+_macro/
+_goc/
+*.bak
+*.tmp
+*.log
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+
+# Hệ điều hành
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store

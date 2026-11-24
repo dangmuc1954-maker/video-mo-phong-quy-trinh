@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="utf-8">
+<style>
+@font-face{font-family:BVP;src:url(../assets/fonts/BeVietnamPro-ExtraBold.ttf);font-weight:800}
+@font-face{font-family:OSW;src:url(../assets/fonts/OswaldVar.ttf);font-weight:200 700}
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1280px;height:720px;overflow:hidden;background:#000;font-family:BVP}
+#t{position:relative;width:1280px;height:720px;overflow:hidden}
+.bg{position:absolute;inset:0;background-size:cover;background-position:center;filter:saturate(1.3) contrast(1.12)}
+.txt{position:absolute;font-weight:800;text-transform:uppercase;line-height:.98;letter-spacing:-.01em;color:#fff;-webkit-text-stroke:14px #000;paint-order:stroke fill;text-shadow:0 6px 0 #000,0 0 30px rgba(0,0,0,.8);white-space:nowrap}
+.y{color:#FACC15}.r{color:#FF3B47}
+.tag{position:absolute;font-family:OSW;font-weight:700;font-size:78px;padding:2px 22px;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.6);border:5px solid #000;color:#111}
+.ring{position:absolute;border:12px solid #FACC15;border-radius:50%;box-shadow:0 0 0 6px #000,0 0 40px rgba(250,204,21,.7)}
+.badge{position:absolute;font-weight:800;font-size:46px;padding:10px 26px;border-radius:14px;border:5px solid #000;text-transform:uppercase;background:#EF3340;color:#fff;transform:rotate(-3deg)}
+.flag{position:absolute;right:40px;top:40px;width:120px;height:120px;border-radius:50%;border:7px solid #fff;box-shadow:0 10px 30px rgba(0,0,0,.6);object-fit:cover}
+</style></head>
+<body><div id="t"></div>
+<script>
+// spec: {layout: split|number|concept, image, image_pos, image_box:[l,t,w,h], tags:[a,b], top, bottom, big, lines:[], badge, ring:[x,y,w,h], arrow:[x1,y1,x2,y2], flag}
+const esc = s => String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;");
+const mark = s => esc(s).replace(/_([^_]+)_/g, '<span class="y">$1</span>').replace(/\*([^*]+)\*/g, '<span class="r">$1</span>');
+const add = (html, css, cls) => { const d = document.createElement("div"); if (cls) d.className = cls; d.innerHTML = html || ""; d.style.cssText = css || ""; document.getElementById("t").appendChild(d); return d; };
+function fit(el, maxW, size) { el.style.fontSize = size + "px"; while (el.scrollWidth > maxW && size > 30) { size -= 3; el.style.fontSize = size + "px"; } return size; }
+window.build = async (s) => {
+  const t = document.getElementById("t"); t.innerHTML = "";
+  const bg = add("", `background-image:url('${s.image}');background-position:${s.image_pos || "center"}`, "bg");
+  if (s.image_box) { const [l, tp, w, h] = s.image_box; bg.style.cssText += `;left:${l}px;top:${tp}px;width:${w}px;height:${h}px;right:auto;bottom:auto;background-size:100% 100%`; }
+  const L = s.layout || "split";
+  if (L === "split") {
+    add("", "position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.85) 0%,rgba(0,0,0,.1) 55%)");
+    if (s.tags) { add("", "position:absolute;left:638px;top:0;bottom:0;width:8px;background:#FACC15;box-shadow:0 0 30px #FACC15");
+      add(esc(s.tags[0]), "left:40px;top:36px;background:#fff;transform:rotate(-4deg)", "tag"); add(esc(s.tags[1]), "right:40px;top:36px;background:#FACC15;transform:rotate(4deg)", "tag"); }
+    const a = add(mark(s.top), "left:50%;bottom:170px;transform:translateX(-50%)", "txt"); fit(a, 1200, 96);
+    const b = add(mark(s.bottom), "left:50%;bottom:44px;transform:translateX(-50%)", "txt y"); fit(b, 1200, 128);
+  } else if (L === "number") {
+    add("", "position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.88) 0%,rgba(0,0,0,.5) 45%,transparent 70%)");
+    const n = add(mark(s.big), "left:44px;top:60px;font-family:OSW;font-weight:700", "txt y"); fit(n, 760, 210);
+    (s.lines || []).forEach((ln, i) => { const e = add(mark(ln), `left:44px;top:${290 + i * 80}px`, "txt"); fit(e, 760, 66); });
+    if (s.badge) add(mark(s.badge), "left:44px;bottom:44px", "badge");
+  } else {
+    add("", "position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.92) 0%,rgba(0,0,0,.55) 48%,transparent 72%)");
+    let y = 84; (s.lines || [s.top]).forEach(ln => { const e = add(mark(ln), `left:44px;top:${y}px`, "txt"); fit(e, 700, 84); y += 84; });
+    y += 18; (s.bottom_lines || [s.bottom]).filter(Boolean).forEach(ln => { const e = add(mark(ln), `left:44px;top:${y}px`, "txt y"); fit(e, 700, 108); y += 106; });
+  }
+  if (s.ring) { const [x, y, w, h] = s.ring; add("", `left:${x}px;top:${y}px;width:${w}px;height:${h}px`, "ring"); }
+  if (s.arrow) { const [x1, y1, x2, y2] = s.arrow; const mx = (x1 + x2) / 2 + (y2 - y1) * .25, my = (y1 + y2) / 2 - (x2 - x1) * .25;
+    const ang = Math.atan2(y2 - my, x2 - mx), hx = x2 - Math.cos(ang - .5) * 46, hy = y2 - Math.sin(ang - .5) * 46, kx = x2 - Math.cos(ang + .5) * 46, ky = y2 - Math.sin(ang + .5) * 46;
+    const p = `M${x1} ${y1} Q${mx} ${my} ${x2} ${y2} M${hx} ${hy} L${x2} ${y2} L${kx} ${ky}`;
+    add(`<svg width="1280" height="720" style="position:absolute;left:0;top:0"><path d="${p}" fill="none" stroke="#000" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/><path d="${p}" fill="none" stroke="#FACC15" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/></svg>`, "position:absolute;inset:0"); }
+  if (s.flag) { const f = document.createElement("img"); f.className = "flag"; f.src = s.flag; t.appendChild(f); }
+  await document.fonts.ready; await Promise.all([...document.images].map(i => i.decode().catch(() => 0)));
+  await new Promise(r => { const im = new Image(); im.onload = im.onerror = r; im.src = s.image; });
+  return 1;
+};
+</script></body></html>

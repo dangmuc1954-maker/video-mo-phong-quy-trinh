@@ -1,0 +1,255 @@
+{
+  "title": "Kien nhan va khon ngoan",
+  "type": "animation",
+  "aspect": "9:16",
+  "canvas": [
+    1080,
+    1920
+  ],
+  "subtitle_size": 7,
+  "transition": true,
+  "caption_top": true,
+  "subtitle_preset": "cinematic",
+  "palette": [
+    "#1C1410",
+    "#FFF8EC",
+    "#F5B301"
+  ],
+  "narration_voice": {
+    "voice_id": "aN7cv9yXNrfIR87bDmyD",
+    "name": "Ninh Đôn - Deep & Warm",
+    "auto": true,
+    "reason": "nam trung niên, trầm ấm, đọc chậm: hợp đạo lý",
+    "backup": [
+      "3VnrjnYrskPMDsapTr8X",
+      "UsgbMVmY3U59ijwK5mdh"
+    ]
+  },
+  "style": "2D minimalist flat animation, simple clean shapes, cinematic lighting with strong contrast between warm gold light and cool dark shadows, smooth natural character motion, gentle camera moves",
+  "subjects": {
+    "hero": "a simple white stick-figure man with a round head, thin black outline, wearing a small yellow miner helmet with a headlamp"
+  },
+  "settings": {
+    "mine": "inside a narrow underground gold mine tunnel, rough brown rock walls, wooden support beams, dust in the air, warm headlamp light",
+    "fork": "a road splitting into two paths at dusk: LEFT path is a dark narrow alley with a bright warm light glowing at its far end; RIGHT path is wide but covered in thick grey fog"
+  },
+  "lock": "Keep the exact same stick-figure man with the yellow miner helmet in every clip. No narration, no voices, no speech; soft ambient sound only (pickaxe hits, wind, distant city hum).",
+  "negative": "No text, no letters, no subtitles, no numbers on screen, no watermark, no realistic humans, no extra characters.",
+  "scenes": [
+    {
+      "id": 1,
+      "clip": "scene_01.mp4",
+      "setting": "mine",
+      "subjects": [
+        "hero"
+      ],
+      "narration": "Làm người, chịu khó thôi là chưa đủ. Bạn còn phải biết kiên nhẫn, và khôn ngoan.",
+      "subtitle": "KIÊN NHẪN & KHÔN NGOAN",
+      "beats": [
+        [
+          "0-3s",
+          "the hero swings his pickaxe hard into the rock wall, sparks and dust fly"
+        ],
+        [
+          "3-7s",
+          "he keeps digging deeper with steady rhythm, sweat dripping, rocks falling around his feet"
+        ],
+        [
+          "7-10s",
+          "he pauses, breathing heavily, wipes his forehead and looks at the endless rock ahead"
+        ]
+      ],
+      "camera": "medium side shot, slow push-in"
+    },
+    {
+      "id": 2,
+      "clip": "scene_02.mp4",
+      "setting": "mine",
+      "subjects": [
+        "hero"
+      ],
+      "continue_from_previous": true,
+      "narration": "Có những lúc, đích đến đã ở ngay trước mắt. Chỉ cần thêm một nhát cuốc nữa thôi, là chạm tới vàng.",
+      "subtitle": "KIÊN NHẪN & KHÔN NGOAN",
+      "beats": [
+        [
+          "0-3s",
+          "camera slowly moves into a cross-section view of the rock wall in front of the hero"
+        ],
+        [
+          "3-10s",
+          "a thick glowing gold vein is revealed only a hand's width behind the thin rock where the hero's pickaxe tip rests; the hero, exhausted, cannot see it"
+        ]
+      ],
+      "camera": "slow lateral dolly into cross-section view",
+      "graphic": {
+        "template": "kinetic_text",
+        "cue": "một nhát cuốc",
+        "hold": 2.5,
+        "anchor": "center",
+        "data": {
+          "lines": [
+            "CHỈ CÒN",
+            "MỘT GANG TAY"
+          ],
+          "emphasis_index": 1,
+          "style": "pop"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "clip": "scene_03.mp4",
+      "setting": "mine",
+      "subjects": [
+        "hero"
+      ],
+      "continue_from_previous": true,
+      "narration": "Nhưng ta lại mệt mỏi, giận dữ, vứt cuốc và quay lưng bỏ đi.",
+      "subtitle": "KIÊN NHẪN & KHÔN NGOAN",
+      "beats": [
+        [
+          "0-2s",
+          "the hero angrily throws his pickaxe on the ground and kicks a rock"
+        ],
+        [
+          "2-4s",
+          "he turns his back and stomps away toward the tunnel exit"
+        ],
+        [
+          "4-10s",
+          "camera holds on the abandoned pickaxe lying right next to the hidden glowing gold vein, the hero's silhouette fading away in the background"
+        ]
+      ],
+      "camera": "static medium shot, then slow pull-back"
+    },
+    {
+      "id": 4,
+      "clip": "scene_04.mp4",
+      "setting": "fork",
+      "subjects": [
+        "hero"
+      ],
+      "narration": "Cũng có lúc, cuộc đời đặt ta trước một ngã rẽ, với hai con đường rất khác nhau.",
+      "subtitle": "KIÊN NHẪN & KHÔN NGOAN",
+      "beats": [
+        [
+          "0-4s",
+          "the hero walks up to the fork in the road and stops"
+        ],
+        [
+          "4-10s",
+          "he looks left at the dark alley with the bright warm light at its end, then right at the wide path lost in thick grey fog, scratching his head"
+        ]
+      ],
+      "camera": "wide shot from behind the hero, both paths visible"
+    },
+    {
+      "id": 5,
+      "clip": "scene_05.mp4",
+      "setting": "fork",
+      "subjects": [
+        "hero"
+      ],
+      "continue_from_previous": true,
+      "narration": "Một lối le lói ánh sáng, nhưng cuối đường là ngõ cụt. Một lối mù mịt sương, nhưng phía sau là cả một vùng trời phồn hoa.",
+      "subtitle": "KIÊN NHẪN & KHÔN NGOAN",
+      "beats": [
+        [
+          "0-5s",
+          "camera flies down the LEFT dark alley toward the bright light and reveals the light comes from a single lamp hanging on a solid brick wall: a dead end"
+        ],
+        [
+          "5-10s",
+          "camera swings to the RIGHT path, glides through the thick fog, and the fog parts to reveal a vast glowing prosperous city full of lights and life behind it"
+        ]
+      ],
+      "camera": "fast flying camera move down the left path, then sweeping move through the fog of the right path",
+      "graphic": {
+        "template": "compare",
+        "cue": "ngõ cụt",
+        "hold": 4.5,
+        "anchor": "top",
+        "data": {
+          "left": {
+            "title": "Lối sáng",
+            "lines": [
+              "Đẹp trước mắt",
+              "Cuối là ngõ cụt"
+            ]
+          },
+          "right": {
+            "title": "Lối sương mù",
+            "lines": [
+              "Khó nhìn thấy",
+              "Sau là phồn hoa"
+            ]
+          },
+          "vs_text": "VS"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "clip": "scene_06.mp4",
+      "setting": "fork",
+      "subjects": [
+        "hero"
+      ],
+      "continue_from_previous": true,
+      "narration": "Vậy mà ta lại cố bước vào con đường cụt tăm tối ấy.",
+      "subtitle": "KIÊN NHẪN & KHÔN NGOAN",
+      "beats": [
+        [
+          "0-2s",
+          "back at the fork, the hero turns away from the foggy path and walks quickly into the dark alley toward the light"
+        ],
+        [
+          "2-4s",
+          "he reaches the brick wall, the lamp flickers"
+        ],
+        [
+          "4-10s",
+          "the lamp goes out, leaving him alone in darkness facing the wall"
+        ]
+      ],
+      "camera": "tracking shot following the hero from behind, ending on a close shot of the wall"
+    },
+    {
+      "id": 7,
+      "clip": "scene_07.mp4",
+      "setting": "fork",
+      "subjects": [
+        "hero"
+      ],
+      "continue_from_previous": true,
+      "narration": "Chịu khó là chưa đủ. Hãy đủ kiên nhẫn để đi đến cùng, và đủ khôn ngoan để chọn đúng đường.",
+      "subtitle": "KIÊN NHẪN & KHÔN NGOAN",
+      "beats": [
+        [
+          "0-4s",
+          "in the dark, the hero slowly turns around and walks back out of the alley"
+        ],
+        [
+          "4-10s",
+          "he steps into the foggy path, the fog clears around him and the glowing city appears ahead at sunrise"
+        ]
+      ],
+      "camera": "slow pull-back, ending in a wide hopeful shot",
+      "graphic": {
+        "template": "kinetic_text",
+        "cue": "kiên nhẫn để đi đến cùng",
+        "hold": 4,
+        "anchor": "center",
+        "data": {
+          "lines": [
+            "KIÊN NHẪN",
+            "& KHÔN NGOAN"
+          ],
+          "emphasis_index": 0,
+          "style": "pop"
+        }
+      }
+    }
+  ]
+}

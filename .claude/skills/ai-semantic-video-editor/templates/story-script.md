@@ -1,0 +1,33 @@
+# Mẫu kịch bản kể chuyện (mode 2)
+
+File `script.txt` dùng cho `tts_elevenlabs.py`: mỗi đoạn (cách nhau 1 dòng trống) là 1 beat/cảnh. Dòng bắt đầu bằng `#` là ghi chú cảnh, không được đọc.
+
+```
+# b1 HOOK — cận cuốc chim cắm xuống đất, push_in
+Có những người chỉ còn cách thành công đúng một nhát cuốc… nhưng lại bỏ cuộc.
+
+# b2 SETUP — hai người đàn ông đứng trước hai hố đào giữa sa mạc, pull_out
+Ngày xưa, có hai người cùng đi tìm vàng.
+
+# b3 CONFLICT — người áo đỏ đào sâu, mồ hôi nhễ nhại, mặt chán nản, push_in
+Người thứ nhất đào rất sâu. Nhưng ngày qua ngày, vẫn chẳng thấy gì.
+
+# b4 TURNING_POINT — cắt ngang lớp đất: vàng chỉ cách mũi cuốc một gang tay; anh vứt cuốc bỏ đi, pan_down
+Anh ta nản lòng, vứt cuốc và bỏ đi. Anh không hề biết, vàng chỉ còn cách mình một gang tay.
+
+# b5 CONTRAST — người áo xanh ở hố nông, vẫn hì hục đào dưới nắng, pan_right
+Người thứ hai còn ở rất xa. Nhưng mỗi ngày, anh vẫn đào thêm một chút.
+
+# b6 RESULT — người áo xanh giơ cục vàng sáng lấp lánh, pan_up
+Và rồi một ngày, anh chạm được vào vàng.
+
+# b7 LESSON — kinetic_text "ĐỪNG BỎ CUỘC", nền hai hố đào lúc hoàng hôn, static
+Thành công đôi khi ở ngay bên cạnh. Đừng dừng lại khi bạn đã đi gần đến đích.
+```
+
+Kèm theo kịch bản, gửi người dùng bảng beat:
+
+| Beat | Lời kể | Chức năng | Cảnh / ẩn dụ | Motion | Graphic |
+|---|---|---|---|---|---|
+| b1 | Có những người… | hook | cận cuốc chim | push_in | — |
+| … | | | | | |

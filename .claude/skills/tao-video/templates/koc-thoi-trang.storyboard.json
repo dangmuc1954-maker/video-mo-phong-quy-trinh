@@ -1,0 +1,30 @@
+{
+  "title": "KOC áo hoodie",
+  "type": "realistic",
+  "aspect": "9:16",
+  "canvas": [1080, 1920],
+  "subtitle_size": 7,
+  "transition": true,
+  "style": "ultra-realistic vertical smartphone fashion video, soft natural daylight, clean minimal studio background",
+  "subjects": {
+    "model": "young Vietnamese woman, long straight black hair, natural makeup, slim build — exactly as in the attached photo",
+    "hoodie": "oversized cream zip-up hoodie with a small embroidered logo on the chest — exactly as in the attached photo"
+  },
+  "scenes": [
+    {"id": 1, "clip": "scene_01.mp4", "reference_images": ["ref/model-hoodie.jpg"],
+     "beats": [["0-2s", "She faces the camera with a confident smile and adjusts the hood with both hands."],
+               ["2-6s", "She pulls the zipper up slowly from chest to collar, fabric folding naturally."],
+               ["6-10s", "She turns 45 degrees to show the side, then looks back at the camera."]],
+     "camera": "locked medium full-body frontal shot, no zoom",
+     "subtitle": "Hoodie form rộng, mặc là xinh!"},
+    {"id": 2, "clip": "scene_02.mp4", "reference_images": ["ref/model-hoodie.jpg"],
+     "action": "Close-up of her hands showing the fabric texture and the embroidered logo, then she smiles.",
+     "camera": "slow push-in close-up",
+     "subtitle": "Nỉ bông dày, mềm, không xù"},
+    {"id": 3, "clip": "scene_03.mp4", "reference_images": ["ref/model-hoodie.jpg"],
+     "action": "She walks toward the camera on a city sidewalk, hood up, confident street style.",
+     "setting": "sunny city sidewalk with cafes, late afternoon",
+     "camera": "tracking shot walking backward in front of her",
+     "subtitle": "Inbox ngay để nhận ưu đãi"}
+  ]
+}

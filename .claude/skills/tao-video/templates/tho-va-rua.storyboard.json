@@ -1,0 +1,51 @@
+{
+  "title": "Thỏ và Rùa",
+  "aspect": "16:9",
+  "canvas": [1920, 1080],
+  "transition": true,
+  "style": "3D Pixar-like cartoon for kids, bright soft lighting, saturated warm colors, gentle depth of field",
+  "characters": {
+    "hare": "slim white hare, long ears with pink inner ears, big blue eyes, wearing a small red scarf, cocky grin",
+    "tortoise": "small round green tortoise, brown hexagon-patterned shell, kind brown eyes, tiny round glasses"
+  },
+  "settings": {
+    "meadow": "sunny green meadow with wildflowers and a dirt race path, morning light",
+    "start": "dirt race path with a wooden start line banner (no letters), forest animals cheering on the sides, morning light",
+    "tree": "big shady oak tree beside the race path, midday light",
+    "finish": "finish line ribbon across the path on a small hill, late afternoon golden light"
+  },
+  "scenes": [
+    {"id": 1, "clip": "scene_01.mp4", "setting": "meadow", "characters": ["hare", "tortoise"],
+     "action": "The Hare zooms around the Tortoise in circles, laughing and pointing at him, while the Tortoise smiles calmly.",
+     "camera": "slow push-in, eye level",
+     "subtitle": "Ngày xưa, có chú Thỏ chạy nhanh nhưng rất kiêu ngạo."},
+    {"id": 2, "clip": "scene_02.mp4", "setting": "meadow", "characters": ["hare", "tortoise"], "continue_from_previous": true,
+     "action": "The Tortoise raises one finger and calmly proposes a race; the Hare bursts out laughing and nods.",
+     "camera": "medium two-shot, static",
+     "subtitle": "Rùa bình tĩnh nói: \"Mình thi chạy nhé!\""},
+    {"id": 3, "clip": "scene_03.mp4", "setting": "start", "characters": ["hare", "tortoise"],
+     "action": "Both stand at the start line; an owl waves a flag and the Hare dashes off in a cloud of dust while the Tortoise takes his first slow step.",
+     "camera": "wide shot, low angle",
+     "subtitle": "Cuộc đua bắt đầu! Thỏ lao vút đi."},
+    {"id": 4, "clip": "scene_04.mp4", "setting": "tree", "characters": ["hare"],
+     "action": "Far ahead, the Hare looks back, sees no one, yawns, lies down in the shade and falls asleep with a smug smile.",
+     "camera": "medium shot, slow pan to the hare",
+     "subtitle": "Thấy Rùa còn xa, Thỏ nằm ngủ một giấc."},
+    {"id": 5, "clip": "scene_05.mp4", "setting": "tree", "characters": ["hare", "tortoise"],
+     "action": "The Tortoise walks steadily past the sleeping Hare, step by step, determined, careful not to wake him.",
+     "camera": "tracking shot following the tortoise",
+     "subtitle": "Rùa vẫn chậm rãi bước, không dừng lại."},
+    {"id": 6, "clip": "scene_06.mp4", "setting": "tree", "characters": ["hare"],
+     "action": "The Hare wakes up, stretches, then panics, ears shooting up, and sprints off at full speed.",
+     "camera": "close-up then quick pull-back",
+     "subtitle": "Thỏ giật mình tỉnh dậy, vội vàng chạy."},
+    {"id": 7, "clip": "scene_07.mp4", "setting": "finish", "characters": ["hare", "tortoise"],
+     "action": "The Tortoise crosses the finish ribbon as forest animals cheer; the Hare arrives just behind, out of breath.",
+     "camera": "wide shot, slow push-in",
+     "subtitle": "Nhưng Rùa đã về đích trước!"},
+    {"id": 8, "clip": "scene_08.mp4", "setting": "finish", "characters": ["hare", "tortoise"], "continue_from_previous": true,
+     "action": "The embarrassed Hare shakes the Tortoise's hand and both smile as the sun sets behind them.",
+     "camera": "medium two-shot, gentle pull-back",
+     "subtitle": "Chậm mà chắc, kiên trì sẽ chiến thắng."}
+  ]
+}

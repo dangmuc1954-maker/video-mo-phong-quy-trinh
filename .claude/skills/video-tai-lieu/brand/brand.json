@@ -1,0 +1,13 @@
+{
+  "name": "Kênh của anh (mặc định)",
+  "accent": "#FF7A3D",
+  "accent2": "#FACC15",
+  "bg": "#121317",
+  "glow": "rgba(255,95,40,.5)",
+  "font_head": "BVP",
+  "voice_id": "qByVAGjXwGlkcRDJoiHg",
+  "intro_line": "",
+  "cta_keyword": "",
+  "note": "Đổi màu nhấn/giọng/câu mở đầu ở đây là áp cho mọi video tài liệu. Màu vàng accent2 = màu tô từ đang đọc (đồng bộ quy tắc sub của anh). Graphic v2: 'tag' = tên kênh hiện góc phải trên (để trống thì ẩn), storyboard có thể ghi 'brand_tag' riêng.",
+  "tag": ""
+}

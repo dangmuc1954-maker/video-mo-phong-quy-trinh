@@ -1,0 +1,1239 @@
+{
+ "version": "2.0",
+ "mode": "STORYTELLING",
+ "project": {
+  "title": "Hai người đào vàng — bài học kiên trì",
+  "language": "vi",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "duration_seconds": 40.92,
+  "voice_audio": "voice.wav",
+  "source_video": null,
+  "bgm": null,
+  "bgm_volume": 0.18,
+  "transcript_timing": "provisional"
+ },
+ "style_bible": {
+  "palette": [
+   "#1C1410",
+   "#FFF8EC",
+   "#F5B301"
+  ],
+  "font": "Roboto",
+  "subtitle_preset": "cinematic",
+  "subtitle_uppercase": false,
+  "motion_style": "slow_cinematic",
+  "pacing": "calm",
+  "character_bible": {
+   "A": "man A: 30s, red shirt, straw hat, tired face",
+   "B": "man B: 30s, blue shirt, headband, determined face"
+  },
+  "visual_style": "cinematic 3D animation, Pixar-like, warm golden desert light, 9:16 vertical, high detail"
+ },
+ "words": [
+  {
+   "text": "Có",
+   "start": 0.25,
+   "end": 0.538,
+   "confidence": null,
+   "beat": 0,
+   "id": "w1"
+  },
+  {
+   "text": "những",
+   "start": 0.562,
+   "end": 0.85,
+   "confidence": null,
+   "beat": 0,
+   "id": "w2"
+  },
+  {
+   "text": "người",
+   "start": 0.875,
+   "end": 1.163,
+   "confidence": null,
+   "beat": 0,
+   "id": "w3"
+  },
+  {
+   "text": "chỉ",
+   "start": 1.188,
+   "end": 1.475,
+   "confidence": null,
+   "beat": 0,
+   "id": "w4"
+  },
+  {
+   "text": "còn",
+   "start": 1.5,
+   "end": 1.788,
+   "confidence": null,
+   "beat": 0,
+   "id": "w5"
+  },
+  {
+   "text": "cách",
+   "start": 1.812,
+   "end": 2.1,
+   "confidence": null,
+   "beat": 0,
+   "id": "w6"
+  },
+  {
+   "text": "thành",
+   "start": 2.125,
+   "end": 2.413,
+   "confidence": null,
+   "beat": 0,
+   "id": "w7"
+  },
+  {
+   "text": "công",
+   "start": 2.438,
+   "end": 2.725,
+   "confidence": null,
+   "beat": 0,
+   "id": "w8"
+  },
+  {
+   "text": "đúng",
+   "start": 2.75,
+   "end": 3.038,
+   "confidence": null,
+   "beat": 0,
+   "id": "w9"
+  },
+  {
+   "text": "một",
+   "start": 3.062,
+   "end": 3.35,
+   "confidence": null,
+   "beat": 0,
+   "id": "w10"
+  },
+  {
+   "text": "nhát",
+   "start": 3.375,
+   "end": 3.663,
+   "confidence": null,
+   "beat": 0,
+   "id": "w11"
+  },
+  {
+   "text": "cuốc…",
+   "start": 3.688,
+   "end": 3.975,
+   "confidence": null,
+   "beat": 0,
+   "id": "w12"
+  },
+  {
+   "text": "nhưng",
+   "start": 4.35,
+   "end": 4.637,
+   "confidence": null,
+   "beat": 0,
+   "id": "w13"
+  },
+  {
+   "text": "lại",
+   "start": 4.662,
+   "end": 4.95,
+   "confidence": null,
+   "beat": 0,
+   "id": "w14"
+  },
+  {
+   "text": "bỏ",
+   "start": 4.975,
+   "end": 5.262,
+   "confidence": null,
+   "beat": 0,
+   "id": "w15"
+  },
+  {
+   "text": "cuộc.",
+   "start": 5.287,
+   "end": 5.575,
+   "confidence": null,
+   "beat": 0,
+   "id": "w16"
+  },
+  {
+   "text": "Ngày",
+   "start": 6.4,
+   "end": 6.687,
+   "confidence": null,
+   "beat": 1,
+   "id": "w17"
+  },
+  {
+   "text": "xưa,",
+   "start": 6.712,
+   "end": 7.0,
+   "confidence": null,
+   "beat": 1,
+   "id": "w18"
+  },
+  {
+   "text": "có",
+   "start": 7.205,
+   "end": 7.492,
+   "confidence": null,
+   "beat": 1,
+   "id": "w19"
+  },
+  {
+   "text": "hai",
+   "start": 7.517,
+   "end": 7.805,
+   "confidence": null,
+   "beat": 1,
+   "id": "w20"
+  },
+  {
+   "text": "người",
+   "start": 7.83,
+   "end": 8.117,
+   "confidence": null,
+   "beat": 1,
+   "id": "w21"
+  },
+  {
+   "text": "cùng",
+   "start": 8.142,
+   "end": 8.43,
+   "confidence": null,
+   "beat": 1,
+   "id": "w22"
+  },
+  {
+   "text": "đi",
+   "start": 8.455,
+   "end": 8.742,
+   "confidence": null,
+   "beat": 1,
+   "id": "w23"
+  },
+  {
+   "text": "tìm",
+   "start": 8.767,
+   "end": 9.055,
+   "confidence": null,
+   "beat": 1,
+   "id": "w24"
+  },
+  {
+   "text": "vàng.",
+   "start": 9.08,
+   "end": 9.367,
+   "confidence": null,
+   "beat": 1,
+   "id": "w25"
+  },
+  {
+   "text": "Người",
+   "start": 10.192,
+   "end": 10.48,
+   "confidence": null,
+   "beat": 2,
+   "id": "w26"
+  },
+  {
+   "text": "thứ",
+   "start": 10.505,
+   "end": 10.792,
+   "confidence": null,
+   "beat": 2,
+   "id": "w27"
+  },
+  {
+   "text": "nhất",
+   "start": 10.817,
+   "end": 11.105,
+   "confidence": null,
+   "beat": 2,
+   "id": "w28"
+  },
+  {
+   "text": "đào",
+   "start": 11.13,
+   "end": 11.417,
+   "confidence": null,
+   "beat": 2,
+   "id": "w29"
+  },
+  {
+   "text": "rất",
+   "start": 11.442,
+   "end": 11.73,
+   "confidence": null,
+   "beat": 2,
+   "id": "w30"
+  },
+  {
+   "text": "sâu.",
+   "start": 11.755,
+   "end": 12.042,
+   "confidence": null,
+   "beat": 2,
+   "id": "w31"
+  },
+  {
+   "text": "Nhưng",
+   "start": 12.417,
+   "end": 12.705,
+   "confidence": null,
+   "beat": 2,
+   "id": "w32"
+  },
+  {
+   "text": "ngày",
+   "start": 12.73,
+   "end": 13.017,
+   "confidence": null,
+   "beat": 2,
+   "id": "w33"
+  },
+  {
+   "text": "qua",
+   "start": 13.042,
+   "end": 13.33,
+   "confidence": null,
+   "beat": 2,
+   "id": "w34"
+  },
+  {
+   "text": "ngày,",
+   "start": 13.355,
+   "end": 13.642,
+   "confidence": null,
+   "beat": 2,
+   "id": "w35"
+  },
+  {
+   "text": "vẫn",
+   "start": 13.847,
+   "end": 14.135,
+   "confidence": null,
+   "beat": 2,
+   "id": "w36"
+  },
+  {
+   "text": "chẳng",
+   "start": 14.16,
+   "end": 14.447,
+   "confidence": null,
+   "beat": 2,
+   "id": "w37"
+  },
+  {
+   "text": "thấy",
+   "start": 14.472,
+   "end": 14.76,
+   "confidence": null,
+   "beat": 2,
+   "id": "w38"
+  },
+  {
+   "text": "gì.",
+   "start": 14.785,
+   "end": 15.072,
+   "confidence": null,
+   "beat": 2,
+   "id": "w39"
+  },
+  {
+   "text": "Anh",
+   "start": 15.897,
+   "end": 16.185,
+   "confidence": null,
+   "beat": 3,
+   "id": "w40"
+  },
+  {
+   "text": "ta",
+   "start": 16.21,
+   "end": 16.497,
+   "confidence": null,
+   "beat": 3,
+   "id": "w41"
+  },
+  {
+   "text": "nản",
+   "start": 16.522,
+   "end": 16.81,
+   "confidence": null,
+   "beat": 3,
+   "id": "w42"
+  },
+  {
+   "text": "lòng,",
+   "start": 16.835,
+   "end": 17.122,
+   "confidence": null,
+   "beat": 3,
+   "id": "w43"
+  },
+  {
+   "text": "vứt",
+   "start": 17.327,
+   "end": 17.615,
+   "confidence": null,
+   "beat": 3,
+   "id": "w44"
+  },
+  {
+   "text": "cuốc",
+   "start": 17.64,
+   "end": 17.927,
+   "confidence": null,
+   "beat": 3,
+   "id": "w45"
+  },
+  {
+   "text": "và",
+   "start": 17.952,
+   "end": 18.24,
+   "confidence": null,
+   "beat": 3,
+   "id": "w46"
+  },
+  {
+   "text": "bỏ",
+   "start": 18.265,
+   "end": 18.552,
+   "confidence": null,
+   "beat": 3,
+   "id": "w47"
+  },
+  {
+   "text": "đi.",
+   "start": 18.577,
+   "end": 18.865,
+   "confidence": null,
+   "beat": 3,
+   "id": "w48"
+  },
+  {
+   "text": "Anh",
+   "start": 19.24,
+   "end": 19.527,
+   "confidence": null,
+   "beat": 3,
+   "id": "w49"
+  },
+  {
+   "text": "không",
+   "start": 19.552,
+   "end": 19.84,
+   "confidence": null,
+   "beat": 3,
+   "id": "w50"
+  },
+  {
+   "text": "hề",
+   "start": 19.865,
+   "end": 20.152,
+   "confidence": null,
+   "beat": 3,
+   "id": "w51"
+  },
+  {
+   "text": "biết,",
+   "start": 20.177,
+   "end": 20.465,
+   "confidence": null,
+   "beat": 3,
+   "id": "w52"
+  },
+  {
+   "text": "vàng",
+   "start": 20.67,
+   "end": 20.957,
+   "confidence": null,
+   "beat": 3,
+   "id": "w53"
+  },
+  {
+   "text": "chỉ",
+   "start": 20.982,
+   "end": 21.27,
+   "confidence": null,
+   "beat": 3,
+   "id": "w54"
+  },
+  {
+   "text": "còn",
+   "start": 21.295,
+   "end": 21.582,
+   "confidence": null,
+   "beat": 3,
+   "id": "w55"
+  },
+  {
+   "text": "cách",
+   "start": 21.607,
+   "end": 21.895,
+   "confidence": null,
+   "beat": 3,
+   "id": "w56"
+  },
+  {
+   "text": "mình",
+   "start": 21.92,
+   "end": 22.207,
+   "confidence": null,
+   "beat": 3,
+   "id": "w57"
+  },
+  {
+   "text": "một",
+   "start": 22.232,
+   "end": 22.52,
+   "confidence": null,
+   "beat": 3,
+   "id": "w58"
+  },
+  {
+   "text": "gang",
+   "start": 22.545,
+   "end": 22.832,
+   "confidence": null,
+   "beat": 3,
+   "id": "w59"
+  },
+  {
+   "text": "tay.",
+   "start": 22.857,
+   "end": 23.145,
+   "confidence": null,
+   "beat": 3,
+   "id": "w60"
+  },
+  {
+   "text": "Người",
+   "start": 23.97,
+   "end": 24.257,
+   "confidence": null,
+   "beat": 4,
+   "id": "w61"
+  },
+  {
+   "text": "thứ",
+   "start": 24.282,
+   "end": 24.57,
+   "confidence": null,
+   "beat": 4,
+   "id": "w62"
+  },
+  {
+   "text": "hai",
+   "start": 24.595,
+   "end": 24.882,
+   "confidence": null,
+   "beat": 4,
+   "id": "w63"
+  },
+  {
+   "text": "còn",
+   "start": 24.907,
+   "end": 25.195,
+   "confidence": null,
+   "beat": 4,
+   "id": "w64"
+  },
+  {
+   "text": "ở",
+   "start": 25.22,
+   "end": 25.507,
+   "confidence": null,
+   "beat": 4,
+   "id": "w65"
+  },
+  {
+   "text": "rất",
+   "start": 25.532,
+   "end": 25.82,
+   "confidence": null,
+   "beat": 4,
+   "id": "w66"
+  },
+  {
+   "text": "xa.",
+   "start": 25.845,
+   "end": 26.132,
+   "confidence": null,
+   "beat": 4,
+   "id": "w67"
+  },
+  {
+   "text": "Nhưng",
+   "start": 26.507,
+   "end": 26.795,
+   "confidence": null,
+   "beat": 4,
+   "id": "w68"
+  },
+  {
+   "text": "mỗi",
+   "start": 26.82,
+   "end": 27.107,
+   "confidence": null,
+   "beat": 4,
+   "id": "w69"
+  },
+  {
+   "text": "ngày,",
+   "start": 27.132,
+   "end": 27.42,
+   "confidence": null,
+   "beat": 4,
+   "id": "w70"
+  },
+  {
+   "text": "anh",
+   "start": 27.625,
+   "end": 27.912,
+   "confidence": null,
+   "beat": 4,
+   "id": "w71"
+  },
+  {
+   "text": "vẫn",
+   "start": 27.937,
+   "end": 28.225,
+   "confidence": null,
+   "beat": 4,
+   "id": "w72"
+  },
+  {
+   "text": "đào",
+   "start": 28.25,
+   "end": 28.537,
+   "confidence": null,
+   "beat": 4,
+   "id": "w73"
+  },
+  {
+   "text": "thêm",
+   "start": 28.562,
+   "end": 28.85,
+   "confidence": null,
+   "beat": 4,
+   "id": "w74"
+  },
+  {
+   "text": "một",
+   "start": 28.875,
+   "end": 29.162,
+   "confidence": null,
+   "beat": 4,
+   "id": "w75"
+  },
+  {
+   "text": "chút.",
+   "start": 29.187,
+   "end": 29.475,
+   "confidence": null,
+   "beat": 4,
+   "id": "w76"
+  },
+  {
+   "text": "Và",
+   "start": 30.3,
+   "end": 30.587,
+   "confidence": null,
+   "beat": 5,
+   "id": "w77"
+  },
+  {
+   "text": "rồi",
+   "start": 30.612,
+   "end": 30.9,
+   "confidence": null,
+   "beat": 5,
+   "id": "w78"
+  },
+  {
+   "text": "một",
+   "start": 30.925,
+   "end": 31.212,
+   "confidence": null,
+   "beat": 5,
+   "id": "w79"
+  },
+  {
+   "text": "ngày,",
+   "start": 31.237,
+   "end": 31.525,
+   "confidence": null,
+   "beat": 5,
+   "id": "w80"
+  },
+  {
+   "text": "anh",
+   "start": 31.73,
+   "end": 32.017,
+   "confidence": null,
+   "beat": 5,
+   "id": "w81"
+  },
+  {
+   "text": "chạm",
+   "start": 32.042,
+   "end": 32.33,
+   "confidence": null,
+   "beat": 5,
+   "id": "w82"
+  },
+  {
+   "text": "được",
+   "start": 32.355,
+   "end": 32.642,
+   "confidence": null,
+   "beat": 5,
+   "id": "w83"
+  },
+  {
+   "text": "vào",
+   "start": 32.667,
+   "end": 32.955,
+   "confidence": null,
+   "beat": 5,
+   "id": "w84"
+  },
+  {
+   "text": "vàng.",
+   "start": 32.98,
+   "end": 33.267,
+   "confidence": null,
+   "beat": 5,
+   "id": "w85"
+  },
+  {
+   "text": "Thành",
+   "start": 34.093,
+   "end": 34.38,
+   "confidence": null,
+   "beat": 6,
+   "id": "w86"
+  },
+  {
+   "text": "công",
+   "start": 34.405,
+   "end": 34.693,
+   "confidence": null,
+   "beat": 6,
+   "id": "w87"
+  },
+  {
+   "text": "đôi",
+   "start": 34.718,
+   "end": 35.005,
+   "confidence": null,
+   "beat": 6,
+   "id": "w88"
+  },
+  {
+   "text": "khi",
+   "start": 35.03,
+   "end": 35.318,
+   "confidence": null,
+   "beat": 6,
+   "id": "w89"
+  },
+  {
+   "text": "ở",
+   "start": 35.343,
+   "end": 35.63,
+   "confidence": null,
+   "beat": 6,
+   "id": "w90"
+  },
+  {
+   "text": "ngay",
+   "start": 35.655,
+   "end": 35.943,
+   "confidence": null,
+   "beat": 6,
+   "id": "w91"
+  },
+  {
+   "text": "bên",
+   "start": 35.968,
+   "end": 36.255,
+   "confidence": null,
+   "beat": 6,
+   "id": "w92"
+  },
+  {
+   "text": "cạnh.",
+   "start": 36.28,
+   "end": 36.568,
+   "confidence": null,
+   "beat": 6,
+   "id": "w93"
+  },
+  {
+   "text": "Đừng",
+   "start": 36.943,
+   "end": 37.23,
+   "confidence": null,
+   "beat": 6,
+   "id": "w94"
+  },
+  {
+   "text": "dừng",
+   "start": 37.255,
+   "end": 37.543,
+   "confidence": null,
+   "beat": 6,
+   "id": "w95"
+  },
+  {
+   "text": "lại",
+   "start": 37.568,
+   "end": 37.855,
+   "confidence": null,
+   "beat": 6,
+   "id": "w96"
+  },
+  {
+   "text": "khi",
+   "start": 37.88,
+   "end": 38.168,
+   "confidence": null,
+   "beat": 6,
+   "id": "w97"
+  },
+  {
+   "text": "bạn",
+   "start": 38.193,
+   "end": 38.48,
+   "confidence": null,
+   "beat": 6,
+   "id": "w98"
+  },
+  {
+   "text": "đã",
+   "start": 38.505,
+   "end": 38.793,
+   "confidence": null,
+   "beat": 6,
+   "id": "w99"
+  },
+  {
+   "text": "đi",
+   "start": 38.818,
+   "end": 39.105,
+   "confidence": null,
+   "beat": 6,
+   "id": "w100"
+  },
+  {
+   "text": "gần",
+   "start": 39.13,
+   "end": 39.418,
+   "confidence": null,
+   "beat": 6,
+   "id": "w101"
+  },
+  {
+   "text": "đến",
+   "start": 39.443,
+   "end": 39.73,
+   "confidence": null,
+   "beat": 6,
+   "id": "w102"
+  },
+  {
+   "text": "đích.",
+   "start": 39.755,
+   "end": 40.043,
+   "confidence": null,
+   "beat": 6,
+   "id": "w103"
+  }
+ ],
+ "beats": [
+  {
+   "id": "b1",
+   "start": 0.0,
+   "end": 6.4,
+   "spoken_text": "Có những người chỉ còn cách thành công đúng một nhát cuốc… nhưng lại bỏ cuộc.",
+   "meaning": "Thành công gần kề nhưng bỏ cuộc",
+   "emotional_intent": "tò mò, tiếc nuối",
+   "narrative_function": "hook",
+   "visual_type": "scene",
+   "rationale": "Cận cuốc chim cắm xuống đất mở ra ẩn dụ đào vàng",
+   "asset_ids": [
+    "s1"
+   ],
+   "visual_cue_word_ids": [
+    "w11",
+    "w15"
+   ],
+   "keywords": [
+    "bỏ cuộc"
+   ]
+  },
+  {
+   "id": "b2",
+   "start": 6.4,
+   "end": 10.192,
+   "spoken_text": "Ngày xưa, có hai người cùng đi tìm vàng.",
+   "meaning": "Giới thiệu hai nhân vật cùng mục tiêu",
+   "emotional_intent": "kể chuyện",
+   "narrative_function": "setup",
+   "visual_type": "scene",
+   "rationale": "Hai người, hai hố đào: đặt nền cho so sánh",
+   "asset_ids": [
+    "s2"
+   ],
+   "visual_cue_word_ids": [
+    "w20",
+    "w25"
+   ],
+   "keywords": []
+  },
+  {
+   "id": "b3",
+   "start": 10.192,
+   "end": 15.897,
+   "spoken_text": "Người thứ nhất đào rất sâu. Nhưng ngày qua ngày, vẫn chẳng thấy gì.",
+   "meaning": "Người A cố gắng nhưng chưa thấy kết quả",
+   "emotional_intent": "mệt mỏi",
+   "narrative_function": "conflict",
+   "visual_type": "scene",
+   "rationale": "Thấy A đào sâu, mồ hôi, chán nản đúng lời 'chẳng thấy gì'",
+   "asset_ids": [
+    "s3"
+   ],
+   "visual_cue_word_ids": [
+    "w29",
+    "w38"
+   ],
+   "keywords": []
+  },
+  {
+   "id": "b4",
+   "start": 15.897,
+   "end": 23.97,
+   "spoken_text": "Anh ta nản lòng, vứt cuốc và bỏ đi. Anh không hề biết, vàng chỉ còn cách mình một gang tay.",
+   "meaning": "A bỏ cuộc khi vàng chỉ còn một gang tay",
+   "emotional_intent": "tiếc nuối, trớ trêu",
+   "narrative_function": "turning_point",
+   "visual_type": "scene",
+   "rationale": "Cảnh cắt lớp đất cho khán giả THẤY vàng ngay dưới chỗ A dừng",
+   "asset_ids": [
+    "s4",
+    "s5"
+   ],
+   "visual_cue_word_ids": [
+    "w44",
+    "w59"
+   ],
+   "keywords": [
+    "một gang tay"
+   ]
+  },
+  {
+   "id": "b5",
+   "start": 23.97,
+   "end": 30.3,
+   "spoken_text": "Người thứ hai còn ở rất xa. Nhưng mỗi ngày, anh vẫn đào thêm một chút.",
+   "meaning": "B còn xa nhưng kiên trì mỗi ngày",
+   "emotional_intent": "bền bỉ",
+   "narrative_function": "contrast",
+   "visual_type": "mograph",
+   "rationale": "Đối lập trực tiếp A và B",
+   "asset_ids": [
+    "s6"
+   ],
+   "visual_cue_word_ids": [
+    "w67",
+    "w73"
+   ],
+   "keywords": [
+    "mỗi ngày"
+   ]
+  },
+  {
+   "id": "b6",
+   "start": 30.3,
+   "end": 34.093,
+   "spoken_text": "Và rồi một ngày, anh chạm được vào vàng.",
+   "meaning": "B chạm được vàng",
+   "emotional_intent": "vỡ òa",
+   "narrative_function": "realization",
+   "visual_type": "scene",
+   "rationale": "Phần thưởng của kiên trì",
+   "asset_ids": [
+    "s7"
+   ],
+   "visual_cue_word_ids": [
+    "w82",
+    "w85"
+   ],
+   "keywords": []
+  },
+  {
+   "id": "b7",
+   "start": 34.093,
+   "end": 40.92,
+   "spoken_text": "Thành công đôi khi ở ngay bên cạnh. Đừng dừng lại khi bạn đã đi gần đến đích.",
+   "meaning": "Bài học: đừng dừng khi đã gần đích",
+   "emotional_intent": "truyền cảm hứng",
+   "narrative_function": "lesson",
+   "visual_type": "kinetic_text",
+   "rationale": "Chốt bài học bằng chữ động",
+   "asset_ids": [
+    "s8"
+   ],
+   "visual_cue_word_ids": [
+    "w94",
+    "w103"
+   ],
+   "keywords": [
+    "đừng dừng lại",
+    "gần đến đích"
+   ]
+  }
+ ],
+ "assets": [
+  {
+   "id": "s1",
+   "kind": "image",
+   "file": null,
+   "prompt": "Extreme close-up of a rusty pickaxe striking dry cracked desert soil, dust flying, dramatic low angle, cinematic 3D animation, Pixar-like, warm golden desert light, 9:16 vertical, high detail",
+   "license": "AI-generated (người dùng chọn công cụ)",
+   "status": "missing"
+  },
+  {
+   "id": "s2",
+   "kind": "image",
+   "file": null,
+   "prompt": "Wide shot of two men standing at two separate dig holes in a vast desert, man A: 30s, red shirt, straw hat, tired face; man B: 30s, blue shirt, headband, determined face; both holding pickaxes, sunrise, cinematic 3D animation, Pixar-like, warm golden desert light, 9:16 vertical, high detail",
+   "license": "AI-generated (người dùng chọn công cụ)",
+   "status": "missing"
+  },
+  {
+   "id": "s3",
+   "kind": "image",
+   "file": null,
+   "prompt": "man A: 30s, red shirt, straw hat, tired face digging deep inside a narrow pit, sweat dripping, frustrated expression, nothing but dirt around, medium shot from above, cinematic 3D animation, Pixar-like, warm golden desert light, 9:16 vertical, high detail",
+   "license": "AI-generated (người dùng chọn công cụ)",
+   "status": "missing"
+  },
+  {
+   "id": "s4",
+   "kind": "image",
+   "file": null,
+   "prompt": "man A: 30s, red shirt, straw hat, tired face throwing his pickaxe down and climbing out of the deep pit, walking away with slumped shoulders, cinematic 3D animation, Pixar-like, warm golden desert light, 9:16 vertical, high detail",
+   "license": "AI-generated (người dùng chọn công cụ)",
+   "status": "missing"
+  },
+  {
+   "id": "s5",
+   "kind": "image",
+   "file": null,
+   "prompt": "Cross-section view of the soil under the abandoned pit: the pickaxe tip lies just a hand's width above a glowing gold vein, ironic dramatic lighting, cinematic 3D animation, Pixar-like, warm golden desert light, 9:16 vertical, high detail",
+   "license": "AI-generated (người dùng chọn công cụ)",
+   "status": "missing"
+  },
+  {
+   "id": "s6",
+   "kind": "image",
+   "file": null,
+   "prompt": "man B: 30s, blue shirt, headband, determined face in a shallow hole far from any gold, still digging energetically under harsh sun, side view, cinematic 3D animation, Pixar-like, warm golden desert light, 9:16 vertical, high detail",
+   "license": "AI-generated (người dùng chọn công cụ)",
+   "status": "missing"
+  },
+  {
+   "id": "s7",
+   "kind": "image",
+   "file": null,
+   "prompt": "man B: 30s, blue shirt, headband, determined face holding up a big shining gold nugget, joyful tears, rays of golden light, low angle hero shot, cinematic 3D animation, Pixar-like, warm golden desert light, 9:16 vertical, high detail",
+   "license": "AI-generated (người dùng chọn công cụ)",
+   "status": "missing"
+  },
+  {
+   "id": "s8",
+   "kind": "image",
+   "file": null,
+   "prompt": "Two dig holes side by side at sunset, one abandoned with a lone pickaxe, one with a sparkling gold glow, calm wide shot, empty sky at top for text, cinematic 3D animation, Pixar-like, warm golden desert light, 9:16 vertical, high detail",
+   "license": "AI-generated (người dùng chọn công cụ)",
+   "status": "missing"
+  }
+ ],
+ "layers": [
+  {
+   "id": "L1",
+   "type": "scene",
+   "start": 0.0,
+   "end": 6.4,
+   "asset_id": "s1",
+   "motion": "push_in",
+   "beat_id": "b1"
+  },
+  {
+   "id": "L2",
+   "type": "scene",
+   "start": 6.4,
+   "end": 10.192,
+   "asset_id": "s2",
+   "motion": "pull_out",
+   "beat_id": "b2"
+  },
+  {
+   "id": "L3",
+   "type": "scene",
+   "start": 10.192,
+   "end": 15.897,
+   "asset_id": "s3",
+   "motion": "push_in",
+   "beat_id": "b3"
+  },
+  {
+   "id": "L4",
+   "type": "scene",
+   "start": 15.897,
+   "end": 19.24,
+   "asset_id": "s4",
+   "motion": "pan_left",
+   "beat_id": "b4"
+  },
+  {
+   "id": "L5",
+   "type": "scene",
+   "start": 19.24,
+   "end": 23.97,
+   "asset_id": "s5",
+   "motion": "pan_down",
+   "beat_id": "b4"
+  },
+  {
+   "id": "L6",
+   "type": "scene",
+   "start": 23.97,
+   "end": 30.3,
+   "asset_id": "s6",
+   "motion": "pan_right",
+   "beat_id": "b5"
+  },
+  {
+   "id": "L7",
+   "type": "scene",
+   "start": 30.3,
+   "end": 34.093,
+   "asset_id": "s7",
+   "motion": "pan_up",
+   "beat_id": "b6"
+  },
+  {
+   "id": "L8",
+   "type": "scene",
+   "start": 34.093,
+   "end": 40.92,
+   "asset_id": "s8",
+   "motion": "static",
+   "beat_id": "b7"
+  },
+  {
+   "id": "G1",
+   "type": "mograph",
+   "start": 2.962,
+   "end": 6.2,
+   "beat_id": "b1",
+   "template": "kinetic_text",
+   "anchor": "top",
+   "data": {
+    "lines": [
+     "CHỈ CÒN",
+     "1 NHÁT CUỐC"
+    ],
+    "emphasis_index": 1,
+    "style": "pop"
+   }
+  },
+  {
+   "id": "G2",
+   "type": "mograph",
+   "start": 22.132,
+   "end": 23.97,
+   "beat_id": "b4",
+   "template": "kinetic_text",
+   "anchor": "top",
+   "data": {
+    "lines": [
+     "MỘT GANG TAY"
+    ],
+    "emphasis_index": 0,
+    "style": "slide"
+   }
+  },
+  {
+   "id": "G3",
+   "type": "mograph",
+   "start": 26.407,
+   "end": 30.1,
+   "beat_id": "b5",
+   "template": "compare",
+   "anchor": "top",
+   "data": {
+    "left": {
+     "title": "Người bỏ cuộc",
+     "lines": [
+      "Đào rất sâu",
+      "Dừng lại sớm"
+     ]
+    },
+    "right": {
+     "title": "Người kiên trì",
+     "lines": [
+      "Còn rất xa",
+      "Đào mỗi ngày"
+     ]
+    },
+    "vs_text": "VS"
+   }
+  },
+  {
+   "id": "G4",
+   "type": "mograph",
+   "start": 36.843,
+   "end": 40.92,
+   "beat_id": "b7",
+   "template": "kinetic_text",
+   "anchor": "top",
+   "data": {
+    "lines": [
+     "ĐỪNG BỎ CUỘC",
+     "khi đã gần đích"
+    ],
+    "emphasis_index": 0,
+    "style": "pop"
+   }
+  }
+ ],
+ "qa": {
+  "unverified_claims": [],
+  "missing_assets": [
+   "s1",
+   "s2",
+   "s3",
+   "s4",
+   "s5",
+   "s6",
+   "s7",
+   "s8"
+  ],
+  "subtitle_alignment_status": "provisional",
+  "visual_alignment_status": "planned",
+  "notes": [
+   "Timing tạm tính, cần lồng tiếng ElevenLabs rồi cập nhật words"
+  ]
+ }
+}

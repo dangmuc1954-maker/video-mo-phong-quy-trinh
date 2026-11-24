@@ -1,0 +1,27 @@
+{
+  "title": "Quảng cáo bình giữ nhiệt",
+  "type": "product",
+  "aspect": "9:16",
+  "canvas": [1080, 1920],
+  "subtitle_size": 7,
+  "transition": true,
+  "style": "premium commercial product video, soft studio lighting, crisp details, smooth slow motion",
+  "subjects": {
+    "bottle": "matte navy stainless-steel thermos bottle with a silver lid and white logo — exactly as in the attached photo"
+  },
+  "settings": {
+    "studio": "clean light-grey studio sweep with soft reflections",
+    "desk": "modern wooden office desk by a sunny window"
+  },
+  "scenes": [
+    {"id": 1, "clip": "scene_01.mp4", "reference_images": ["ref/san-pham.jpg"], "setting": "studio",
+     "action": "The bottle slowly rotates 360 degrees on a turntable, light gliding across its matte surface.",
+     "camera": "static hero shot, slight low angle", "subtitle": "Giữ nóng 24h – lạnh 48h"},
+    {"id": 2, "clip": "scene_02.mp4", "reference_images": ["ref/san-pham.jpg"], "setting": "studio",
+     "action": "Ice cubes drop into the open bottle in slow motion, cold mist rises.",
+     "camera": "macro close-up from above", "subtitle": "Inox 304 an toàn"},
+    {"id": 3, "clip": "scene_03.mp4", "reference_images": ["ref/san-pham.jpg"], "setting": "desk",
+     "action": "A hand picks up the bottle, opens the lid and pours steaming tea into a cup.",
+     "camera": "medium shot, gentle push-in", "subtitle": "Chỉ 199K – Mua ngay!"}
+  ]
+}
