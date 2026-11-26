@@ -147,6 +147,7 @@ Sau đó Claude **xem `_review.jpg`** (4 khung/cảnh) bằng mắt. Cảnh nào
 - Video `review` thì mọi câu thoại đều vietsub. Không thêm giọng AI.
 
 ### (Tuỳ chọn) Giọng kể ElevenLabs thay cho giọng đọc trong clip
+⚠️ **Chỉ dùng ElevenLabs khi video CẦN tiếng người** (có lời kể / thoại, hoặc anh yêu cầu giọng) — anh chốt 26/11/2026. Video không lời (động vật AI, hài tình huống chỉ nhạc, timelapse, video mẫu không có giọng) → không tạo giọng, không sub, chỉ cảnh + nhạc (+ SFX).
 Video kể chuyện, đạo lý hay giải thích cần **một giọng đọc đồng nhất xuyên suốt**: dùng skill **ai-semantic-video-editor**, mục "Dùng chung với skill tao-video". Tóm tắt: lời kể ghi vào `narration` (không ghi vào `dialogue`) → `tts_macro.py` tạo giọng ở mục **Giọng đọc (TTS)** của tool và đồng bộ (~25s) → sau Bước 7 chạy `capcut_narration.py` (cảnh, sub, graphic khớp theo giọng) → Bước 8 và 9 như cũ.
 
 ## Bước 7 — Dựng CapCut (script)

@@ -144,7 +144,9 @@ def screen_state():
        frac(im, (380, 105, 1190, 540), lambda r, g, b: r + g + b > 600) < 0.2:
         return "picker"           # hộp chọn ảnh: nút "Dùng ảnh đã chọn"
     badge = (1400, 17, 1436, 29)  # ô "Prompt #N" đầu ngăn chi tiết (đo: mở 0.16 trắng / đóng 0.005)
-    if frac(im, badge, lambda r, g, b: min(r, g, b) > 170) > 0.08 and \
+    # 26/11: tool thêm ô "Giọng Flow" đè vùng badge → nút "Tạo video" xanh còn hiện nghĩa là ngăn ĐANG ĐÓNG
+    tao_btn = frac(im, (1512, 16, 1560, 30), lambda r, g, b: b > r + 40 and g > r + 20) > 0.3
+    if not tao_btn and frac(im, badge, lambda r, g, b: min(r, g, b) > 170) > 0.08 and \
        frac(im, badge, lambda r, g, b: r + g + b < 120) > 0.4:
         return "panel"
     return "page" if active_nav(im) == "video" else "other"   # "page" = trang Video AI, không hộp nào mở
@@ -211,15 +213,17 @@ P = dict(
     btn_import=(1327, 57), name_box=(550, 100), paste=(624, 100), clear_text=(722, 100), clear_imgs=(746, 283),
     src_computer=(553, 208), dropzone=(624, 250), do_import=(1050, 583),
     last_row=(400, 200), close_panel=(1553, 23), prev_prompt=(1470, 23),
-    ratio=(1425, 307), model=(1478, 288), dur=(1530, 307), upscale=(1540, 347), wm=(1540, 379),
-    apply_sel=(1439, 411), add_ref=(1537, 447), mode_frames=(1517, 239), mode_components=(1438, 239),
+    # 26/11/2026: tool thêm dòng "Giọng Flow" (không chọn, anh dặn) → các mục dưới tụt ~28px
+    ratio=(1425, 307), model=(1478, 288), dur=(1530, 307), upscale=(1540, 376), wm=(1540, 407),
+    apply_sel=(1439, 438), add_ref=(1537, 474), mode_frames=(1517, 239), mode_components=(1438, 239),
     pick_search=(1110, 150), pick_first=(437, 225), pick_ok=(1153, 527),
     generate=(1535, 23),
 )
 RATIO_Y = {"16:9": 325, "9:16": 341}
 # Từ 13/11/2026 tool thêm "Omni 1.2 Flash" lên ĐẦU danh sách (đốt credit gấp ~3 lần, anh dặn KHÔNG dùng). "omni" = Omni 1.1 Flash (mục 2); "omni12" chỉ khi anh yêu cầu rõ.
 # Toạ độ ước theo khoảng cách ~14px/mục — LUÔN Read _macro/2_settings.jpg kiểm ô model ghi "Omni 1.1 Flash" trước khi tạo.
-MODEL_Y = {"omni12": 307, "omni": 321, "lite": 335, "lite-lp": 350, "fast": 364, "quality": 378}
+# 26/11/2026: tool lại đổi thứ tự — Omni 1.1 Flash ĐẦU (307), Omni 1.2 thứ hai (321). Đã kiểm bằng mắt.
+MODEL_Y = {"omni": 307, "omni12": 321, "lite": 335, "lite-lp": 350, "fast": 364, "quality": 378}
 DUR_Y = {4: 325, 6: 338, 8: 353, 10: 368}
 
 
@@ -257,9 +261,15 @@ def queued_count(prompts, since):
                and " ".join((j.get("payload", {}).get("prompt") or "").split()).lower() in keys)
 
 
+def refs_dir(proj):
+    rd = os.path.join(os.environ.get("TEMP", proj), "tool_refs_" + os.path.basename(proj))
+    return rd if rd.isascii() else os.path.join(proj, "tool_refs")
+
+
 def prepare_refs(sb, proj):
     """tool_refs/ref-<vân tay chữ>.<đuôi> — tên không có chữ số để hộp Nhập không tự ghép nhầm cảnh."""
-    rd = os.path.join(proj, "tool_refs")
+    # 26/11: đường dẫn có dấu (dự án, quản lý) gõ vào hộp Open của Windows bị hỏng → để ảnh ở thư mục TEMP (không dấu)
+    rd = refs_dir(proj)
     shutil.rmtree(rd, ignore_errors=True)
     os.makedirs(rd)
     shas = []
@@ -311,7 +321,7 @@ def run(a):
     if refs:
         click(*P["src_computer"], wait=0.4)
         click(*P["dropzone"], wait=1.5)          # hộp chọn file Windows
-        type_text(os.path.join(proj, "tool_refs"))
+        type_text(refs_dir(proj))
         key(0x0D, wait=1.0)
         type_text(" ".join(f'"{r}"' for r in refs))
         key(0x0D, wait=1.2)

@@ -10,6 +10,11 @@ Sau đó Claude zoom kiểm tra nút "TẠO VIDEO KỊCH BẢN (N cảnh)" + cà
 Bước 2 (--only-generate): chỉ bấm TẠO VIDEO KỊCH BẢN khi đang ở trang Kịch Bản (không hộp nào mở).
 Lấy clip: tool_jobs.py collect … --wait 1800.
 
+⚠ App 26/11/2026 (đã gặp thật): dự án mới vẫn có 2 thẻ mẫu tiếng Việt ("Một chú mèo…") đứng TRƯỚC cảnh nạp vào;
+"Nạp Vào Dự Án" giờ NỐI THÊM (không thay) → sau khi chạy macro PHẢI chụp xem thẻ 1 có phải prompt của mình, xoá thẻ mẫu (🗑 ~273,162).
+Mỗi thẻ có thêm nút WM (tự xoá logo) và 1080p (tự upscale) ở hàng cài đặt (thẻ k: gốc x = 117 + 181.7·(k−1) mỗi hàng 8 thẻ,
+thời lượng +116, WM +135, 1080p +154; hàng 1 y=224, hàng 2 y=340) — bật cả hai cho mọi thẻ. Thẻ mới nạp mặc định 5s → đổi 10s (ô chọn: End, Enter).
+Model "Omni Flash" trong thẻ = Omni 1.1 (mục "Omni 1.2 Flash" đứng trên — không chọn).
 An toàn giống tool_macro.py: nhận diện màn hình trước mỗi bước, sai là dừng; không phím nguy hiểm.
 Chỉ tự gắn ảnh cho Cảnh 1 (vị trí nút "+" các cảnh sau đổi theo độ dài prompt) — cảnh sau cần ảnh riêng thì Claude gắn tay.
 """
@@ -136,6 +141,16 @@ def build(a):
     imgs = [imgs] if isinstance(imgs, str) else imgs
     if imgs:
         paths = [p if os.path.isabs(p) else os.path.join(proj, p) for p in imgs]
+        if not all(p.isascii() for p in paths):  # 26/11: đường dẫn có dấu gõ vào hộp Open bị hỏng → chép sang TEMP không dấu
+            import shutil
+            rd = M.refs_dir(proj)
+            os.makedirs(rd, exist_ok=True)
+            new = []
+            for i, p in enumerate(paths):
+                q = os.path.join(rd, f"anh{'abcdefgh'[i]}{os.path.splitext(p)[1].lower()}")
+                shutil.copy2(p, q)
+                new.append(q)
+            paths = new
         folder = os.path.dirname(paths[0])
         opened = False
         for yy in (162, 175, 168):                # ô "+" của Cảnh 1 nằm ở y=162 (dự án mới) hoặc 175 (bố cục cũ): thử đúng vị trí trước, kiểm hộp chọn file

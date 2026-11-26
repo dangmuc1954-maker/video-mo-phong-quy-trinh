@@ -16,6 +16,17 @@ Video mẫu chỉ để **tham khảo và hiểu DẠNG video**. Mọi thứ cò
 | Phong cách hình tổng thể (bút chì đen trắng, 3D, ảnh thật…) và cách trình bày chung (tiêu đề trên, dải ảnh giữa, sub dưới…) | Dùng lại lời thoại, cốt truyện, chủ đề cụ thể, nhân vật có bản quyền, logo, watermark, mặt người thật |
 | Chất cảm xúc và kiểu kể (hỏi thẳng người xem, ngôi thứ hai, ẩn dụ…) | Đặt chuyển cảnh / SFX / nhạc / chữ nhấn theo mẫu |
 
+### SÁT KIỂU MẪU + GIỌNG CHỈ KHI CẦN (anh chốt 26/11/2026)
+- **Video làm ra phải SÁT KIỂU mẫu**: người xem nhìn là thấy "cùng một kiểu video". Giữ đúng: dạng nhân vật, chất hình (ảnh thật kiểu phim / 3D / vẽ…), tỉ lệ khung, độ dài tổng gần mẫu, kiểu âm thanh (chỉ nhạc / nhạc + tiếng động / có giọng kể), có hay không có chữ trên màn hình, kiểu mạch truyện (vd chuỗi tình huống hài của cùng nhóm nhân vật). Cái mới là tình huống, câu chuyện cụ thể — không chép từng cảnh của mẫu.
+- **Xem mẫu KỸ trước khi viết** (bài học 26/11: bản đầu "mèo giang hồ" bị chê "chưa phải phim hành động, không tự nhiên"): trích tấm 1 khung/giây của CẢ video mẫu (`ffmpeg -vf fps=1,scale=320:-1,tile=8x3`) và xem hết, ghi vào `phan_tich.md`:
+  1. **Mức hành động / thể loại phim** (phim hành động rượt đuổi? đời thường? hài tĩnh?) — prompt `style` phải nói đúng thể loại phim, vd "gritty Asian crime action movie, handheld, motion blur, NOT glossy, NOT posed".
+  2. **Ngôn ngữ máy quay**: cầm tay / sát đất / lướt theo / tiền cảnh che / rack focus / whip pan — ghi vào `camera` từng cảnh.
+  3. **Nhân vật diễn thế nào**: động vật đi lại như thật hay tạo dáng; người thật phản ứng ra sao. Mỗi cảnh phải có HÀNH ĐỘNG + PHẢN ỨNG (dùng `beats` theo giây), không cảnh "ngồi nhìn".
+  4. **Các loại tình huống** trong mạch (cướp → rượt → đàn em chào → đột kích → giao dịch → hưởng thụ → tiệc → dằn mặt → bước ra) — làm đủ các loại tình huống đó bằng chi tiết của mình (bối cảnh Việt, đồ vật khác).
+  5. Dựng: cắt trên chuyển động, chuyển cảnh nhòe lướt, màu phim thống nhất; nhạc đúng thể loại (hành động → trống/bass căng, có cao trào).
+- **ElevenLabs CHỈ dùng khi video cần tiếng người**: mẫu có giọng kể / thoại người, hoặc anh yêu cầu giọng. Mẫu chỉ có nhạc / tiếng động (vd video AI động vật, timelapse, hài không lời) → KHÔNG tạo giọng, KHÔNG sub story_pop, KHÔNG chữ nhấn; chỉ cảnh + nhạc nền (+ SFX nếu mẫu có), giữ đúng chất "không lời" của mẫu. Ghi `"voice": "none"` trong storyboard.
+- Anh nói "không cần hậu kỳ CapCut" → dựng và xuất thẳng bằng FFmpeg (ghép cảnh, chuyển cảnh mềm, nhạc), vẫn tự kiểm cảnh lỗi trước khi gửi.
+
 **Nội dung và edit là của skill mình:** chủ đề mới, kịch bản mới, lời kể mới (theo `giong-ke-hay.md`), hồ sơ edit (`bo-nao-dao-dien.md` → `edit_profile`), nhịp cắt / chuyển cảnh / chữ nhấn / SFX / nhạc / hậu kỳ CapCut quyết định theo LỜI KỂ và cảm xúc của video MỚI, đúng quy tắc của skill sản xuất tương ứng. Giống mẫu ở "trông cùng một dạng video", khác ở "mọi chi tiết bên trong".
 
 ```
